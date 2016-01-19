@@ -1,0 +1,4 @@
+
+/backend and /frontend is a fork of https://github.com/shekhargulati/todoapp-spark
+
+Docker compatiblity is contributed by https://github.com/foxylion
