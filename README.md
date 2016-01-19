@@ -1,7 +1,8 @@
 # Docker Sample
 
-This repository contains a small sample app running fully in Docker containers. Setup is powered with Docker compose.
-The TODO app itself is from [Shekhar Gulati](https://github.com/shekhargulati/todoapp-spark).
+This repository contains a small sample app running fully in Docker containers. Setup is powered with Docker compose. The TODO app itself is from [Shekhar Gulati](https://github.com/shekhargulati/todoapp-spark).
+
+This repository was created as part of a introduction workshop for Docker. [Here](https://goo.gl/ZNKnmf) you can find the [slides](https://goo.gl/ZNKnmf).
 
 ![Docker Logo](https://camo.githubusercontent.com/3482fc32e1f4cad0c44039c8f01e1e270e6894ee/687474703a2f2f692e696d6775722e636f6d2f4b6764574c64682e706e67)
 
