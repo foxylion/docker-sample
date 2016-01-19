@@ -1,0 +1,32 @@
+
+# Requires "docker network create todo-network" to be called first.
+
+database:
+  container_name: todo-db
+  image: mongo
+  net: todo-network
+  volumes:
+  - /var/lib/todo:/data/db
+
+backend:
+  container_name: todo-backend
+  build: ./backend
+  net: todo-network
+  environment:
+    MONGODB_HOST: "todo-db"
+    MONGODB_NAME: "todo"
+    MONGODB_USERNAME: ""
+    MONGODB_PASSWORD: ""
+
+frontend:
+  container_name: todo-frontend
+  build: ./frontend
+  net: todo-network
+
+proxy:
+  container_name: todo-proxy
+  build: ./proxy
+  net: todo-network
+  ports: ["80:80"]
+  volumes:
+  - /vagrant/apache-logs:/logs
