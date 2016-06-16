@@ -9,7 +9,7 @@ This repository was created as part of a introduction workshop for Docker. [Here
 ## Used technologies
 
 - The backend is written in **Java 8** with the help of the [**Spark Framework**](http://sparkjava.com/) and uses [**Apache Maven**](https://maven.apache.org/) as a build tool.
-The backend depends on [**MongoDB**](https://www.mongodb.org/) for data storage.
+- The backend depends on [**MongoDB**](https://www.mongodb.org/) for data storage.
 - The frontend is written in **Javascript** and [**AngularJS**](https://angularjs.org/) and is served by a [**Nginx**](http://nginx.org/) instance.
 - The proxy uses an [**Apache HTTPD 2.4**](https://httpd.apache.org/) to serve the backend API and the frontend under the same URL. Also it enabled loadbalancing the backend independently from the fronted.
 - Each component of the stack runs in its own [**Docker container**](https://www.docker.com/docker-engine). The containers are on a common [**Docker network**](https://docs.docker.com/engine/userguide/networking/dockernetworks/).
